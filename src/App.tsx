@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import { Character } from "./components/Character";
+import { CharacterList } from "./components/CharacterList";
 
 interface rick  {
   name: string;
@@ -28,6 +30,8 @@ const App = () => {
   <div>
 
     <h1>Rick & Morty</h1>
+    <Character/>
+    <CharacterList/>
 
     {
       characters.map( character => {
